@@ -15,7 +15,7 @@ h1 {
     text-align: center;
     padding-top: 20px;  
     text-shadow: 2px 2px 4px black; 
-    margin-bottom: 47px; 
+    margin-bottom: 43px; 
 }
 
 .row {
@@ -38,6 +38,54 @@ h1 {
     margin-bottom: 33px;
     text-align: center;
     box-shadow: 3px 3px 2px black;  
+}
+
+ .image-balloon:hover {
+    background-image: url('../img/noun_air_balloon_3134741.png'); 
+}
+
+ .image-bycicle:hover {
+    background-image: url('../img/noun_Bicycle_3134821.png');
+}
+
+.image-cruise:hover {
+    background-image: url('../img/noun_Cruise_Ship_3134824.png');
+}
+
+.image-tractor:hover {
+    background-image: url('../img/noun_Tractor_3134797.png');
+}
+
+.image-tram:hover {
+    background-image: url('../img/noun_Tram_3134750.png');
+}
+
+.image-submarine:hover {
+    background-image: url('../img/noun_Submarine_3134738.png');
+}
+
+span {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
 }
 
 
