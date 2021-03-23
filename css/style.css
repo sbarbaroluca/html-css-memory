@@ -4,87 +4,77 @@
     padding: 0;
 }
 
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
 body {
     font-family: 'Nerko One', cursive;
     background-color:#ADD8E6;
+    text-align: center;
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 80px;
     color: white;
-    text-align: center;
-    padding-top: 20px;  
+    text-transform: uppercase; 
     text-shadow: 2px 2px 4px black; 
-    margin-bottom: 43px; 
 }
 
 .row {
-    margin-left: 355px;
+    margin: 30px 0;
 }
 
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-.card {
-    width: 161px;
-    height: 185px;
-    background-color: white;
+.card-element {
+    float: left;
+    width: calc(25% - 30px);
+    margin: 0 15px;
     border-radius: 10px;
-    margin-left: 21px;
-    display: inline-block;
+    background-color: white;
     background-image: url('../img/pattern.png');
-    margin-bottom: 10px;
-    background-position: center;
-    background-size: 25%;
-    vertical-align:middle;
-    margin-bottom: 33px;
-    text-align: center;
-    box-shadow: 3px 3px 2px black;  
+    background-size: contain;
+    background-repeat: repeat;
+    cursor: pointer;
 }
 
- .image-balloon:hover {
-    background-image: url('../img/noun_air_balloon_3134741.png'); 
+.card-element.active,
+.card-element:hover {
+    background-image: none;
 }
 
- .image-bycicle:hover {
-    background-image: url('../img/noun_Bicycle_3134821.png');
+.card-element img {
+    visibility: hidden;
+    width: 100%;
 }
 
-.image-cruise:hover {
-    background-image: url('../img/noun_Cruise_Ship_3134824.png');
+.card-element.active img,
+.card-element:hover img {
+    visibility: visible;
 }
 
-.image-tractor:hover {
-    background-image: url('../img/noun_Tractor_3134797.png');
+.card-element h3 {
+    visibility: hidden;
+    font-size: 28px;
+    line-height: 1;
+    color: #E61A86;
 }
 
-.image-tram:hover {
-    background-image: url('../img/noun_Tram_3134750.png');
+.card-element.active h3 {
+    visibility: visible;
 }
 
-.image-submarine:hover {
-    background-image: url('../img/noun_Submarine_3134738.png');
+.card-element:hover {
+    color: #E67919;
 }
-
-span {
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
-    height: 50px;
-    margin-top: 10px;
-    text-align: center;
     font-size: 20px;
 }
 
